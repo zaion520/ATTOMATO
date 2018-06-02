@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}
+includedir=/root/advancedtomat/release/src-rt-6.x.4708/router/ffmpeg
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 50.15.1
+Requires: 
+Conflicts:
+Libs: ${libdir}/libavutil.a 
+Cflags: -I${includedir}

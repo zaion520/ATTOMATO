@@ -1,0 +1,11 @@
+--- mysql/configure	2017-09-28 17:27:10.000000000 +0200
++++ mysql/configure	2013-11-04 19:55:16.000000000 +0100
+@@ -26393,7 +26392,7 @@ fi
+ fi
+ { $as_echo "$as_me:$LINENO: result: $ac_cv_sys_restartable_syscalls" >&5
+ $as_echo "$ac_cv_sys_restartable_syscalls" >&6; }
+-if test "$ac_cv_sys_restartable_syscalls" = yes; then
++if test $ac_cv_sys_restartable_syscalls = yes; then
+ 
+ cat >>confdefs.h <<\_ACEOF
+ #define HAVE_RESTARTABLE_SYSCALLS 1

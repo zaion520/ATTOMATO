@@ -1,0 +1,469 @@
+dnscrypt_proxy-windows_service.o: windows_service.c ../../config.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/string.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/features.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_config.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/cdefs.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../lib/gcc/arm-brcm-linux-uclibcgnueabi/4.5.3/include/stddef.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/xlocale.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/locale.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_locale.h \
+ app.h plugin_support.h ../include/dnscrypt/plugin.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/assert.h \
+ ../include/dnscrypt/private.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/types.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/types.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/wordsize.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/typesizes.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/pthreadtypes.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sched.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/time.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/endian.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/endian.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/byteswap.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/byteswap.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/byteswap-common.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/select.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/select.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sigset.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/time.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/sysmacros.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../lib/gcc/arm-brcm-linux-uclibcgnueabi/4.5.3/include/stdint.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdint.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/wchar.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdlib.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/waitflags.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/waitstatus.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/alloca.h \
+ ../include/dnscrypt/version.h ../ext/queue.h dnscrypt_proxy.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdio.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_stdio.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/wchar.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_mutex.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/pthread.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sched.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_clk_tck.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/initspin.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sigthread.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_pthread.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../lib/gcc/arm-brcm-linux-uclibcgnueabi/4.5.3/include/stdarg.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/stdio_lim.h \
+ ../libevent-modified/include/event2/event.h \
+ ../libevent-modified/include/event2/event-config.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/time.h \
+ ../libevent-modified/include/event2/util.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/netdb.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/netinet/in.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/socket.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/uio.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/uio.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/socket.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../lib/gcc/arm-brcm-linux-uclibcgnueabi/4.5.3/include-fixed/limits.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../lib/gcc/arm-brcm-linux-uclibcgnueabi/4.5.3/include-fixed/syslimits.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/limits.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/posix1_lim.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/local_lim.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/linux/limits.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_local_lim.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/posix2_lim.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/xopen_lim.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sockaddr.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/asm/socket.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/asm/sockios.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/in.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/rpc/netdb.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/siginfo.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/netdb.h \
+ ../libevent-modified/include/event2/listener.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/version.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/export.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/core.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_aead_aes256gcm.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_aead_chacha20poly1305.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_aead_xchacha20poly1305.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_auth.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_auth_hmacsha512256.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_auth_hmacsha512.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_hash_sha512.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_auth_hmacsha256.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_hash_sha256.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_auth_hmacsha512.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_auth_hmacsha512256.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_box.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_box_curve25519xsalsa20poly1305.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_stream_xsalsa20.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_box_curve25519xsalsa20poly1305.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_core_hsalsa20.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_core_hchacha20.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_core_salsa20.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_core_salsa2012.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_core_salsa208.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_generichash.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_generichash_blake2b.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_generichash_blake2b.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_hash.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_hash_sha256.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_hash_sha512.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_kdf.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_kdf_blake2b.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_kdf_blake2b.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_kx.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_onetimeauth.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_onetimeauth_poly1305.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_onetimeauth_poly1305.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_pwhash.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_pwhash_argon2i.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_pwhash_argon2id.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_pwhash_argon2i.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_scalarmult.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_scalarmult_curve25519.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_scalarmult_curve25519.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_secretbox.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_secretbox_xsalsa20poly1305.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_secretbox_xsalsa20poly1305.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_secretstream_xchacha20poly1305.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_aead_xchacha20poly1305.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_stream_chacha20.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_shorthash.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_shorthash_siphash24.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_shorthash_siphash24.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_sign.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_sign_ed25519.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_sign_ed25519.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_stream.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_stream_chacha20.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_stream_salsa20.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_stream_xsalsa20.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_verify_16.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_verify_32.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_verify_64.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/randombytes.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/randombytes_salsa20_random.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/randombytes.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/randombytes_sysrandom.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/runtime.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/utils.h \
+ cert.h ../libevent-modified/include/event2/dns.h dnscrypt_client.h \
+ dnscrypt.h logger.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/syslog.h \
+ /root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/syslog.h \
+ utils.h windows_service.h
+
+../../config.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/string.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/features.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_config.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/cdefs.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../lib/gcc/arm-brcm-linux-uclibcgnueabi/4.5.3/include/stddef.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/xlocale.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/locale.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_locale.h:
+
+app.h:
+
+plugin_support.h:
+
+../include/dnscrypt/plugin.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/assert.h:
+
+../include/dnscrypt/private.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/types.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/types.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/wordsize.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/typesizes.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/pthreadtypes.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sched.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/time.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/endian.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/endian.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/byteswap.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/byteswap.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/byteswap-common.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/select.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/select.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sigset.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/time.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/sysmacros.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../lib/gcc/arm-brcm-linux-uclibcgnueabi/4.5.3/include/stdint.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdint.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/wchar.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdlib.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/waitflags.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/waitstatus.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/alloca.h:
+
+../include/dnscrypt/version.h:
+
+../ext/queue.h:
+
+dnscrypt_proxy.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdio.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_stdio.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/wchar.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_mutex.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/pthread.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sched.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_clk_tck.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/initspin.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sigthread.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_pthread.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../lib/gcc/arm-brcm-linux-uclibcgnueabi/4.5.3/include/stdarg.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/stdio_lim.h:
+
+../libevent-modified/include/event2/event.h:
+
+../libevent-modified/include/event2/event-config.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/time.h:
+
+../libevent-modified/include/event2/util.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/netdb.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/netinet/in.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/socket.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/uio.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/uio.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/socket.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../lib/gcc/arm-brcm-linux-uclibcgnueabi/4.5.3/include-fixed/limits.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../lib/gcc/arm-brcm-linux-uclibcgnueabi/4.5.3/include-fixed/syslimits.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/limits.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/posix1_lim.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/local_lim.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/linux/limits.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_local_lim.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/posix2_lim.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/xopen_lim.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sockaddr.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/asm/socket.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/asm/sockios.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/in.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/rpc/netdb.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/siginfo.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/netdb.h:
+
+../libevent-modified/include/event2/listener.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/version.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/export.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/core.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_aead_aes256gcm.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_aead_chacha20poly1305.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_aead_xchacha20poly1305.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_auth.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_auth_hmacsha512256.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_auth_hmacsha512.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_hash_sha512.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_auth_hmacsha256.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_hash_sha256.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_auth_hmacsha512.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_auth_hmacsha512256.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_box.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_box_curve25519xsalsa20poly1305.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_stream_xsalsa20.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_box_curve25519xsalsa20poly1305.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_core_hsalsa20.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_core_hchacha20.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_core_salsa20.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_core_salsa2012.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_core_salsa208.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_generichash.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_generichash_blake2b.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_generichash_blake2b.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_hash.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_hash_sha256.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_hash_sha512.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_kdf.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_kdf_blake2b.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_kdf_blake2b.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_kx.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_onetimeauth.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_onetimeauth_poly1305.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_onetimeauth_poly1305.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_pwhash.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_pwhash_argon2i.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_pwhash_argon2id.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_pwhash_argon2i.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_scalarmult.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_scalarmult_curve25519.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_scalarmult_curve25519.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_secretbox.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_secretbox_xsalsa20poly1305.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_secretbox_xsalsa20poly1305.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_secretstream_xchacha20poly1305.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_aead_xchacha20poly1305.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_stream_chacha20.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_shorthash.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_shorthash_siphash24.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_shorthash_siphash24.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_sign.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_sign_ed25519.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_sign_ed25519.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_stream.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_stream_chacha20.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_stream_salsa20.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_stream_xsalsa20.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_verify_16.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_verify_32.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/crypto_verify_64.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/randombytes.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/randombytes_salsa20_random.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/randombytes.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/randombytes_sysrandom.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/runtime.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/router/libsodium/src/libsodium/include/sodium/utils.h:
+
+cert.h:
+
+../libevent-modified/include/event2/dns.h:
+
+dnscrypt_client.h:
+
+dnscrypt.h:
+
+logger.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/syslog.h:
+
+/root/advancedtomat/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/syslog.h:
+
+utils.h:
+
+windows_service.h:
