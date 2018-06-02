@@ -1,7 +1,4 @@
 # **advancedtomato-ARM** #
-# **advancedtomato-ARM** #
-# **advancedtomato-ARM** #
-# **advancedtomato-ARM** #
 
 
 **Forked off from Tomato-ARM by Shibby, builds compiled by @kille72**
