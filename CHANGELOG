@@ -1,0 +1,143 @@
+FreshTomato-ARM Changelog
+===========================
+
+2018.3.018-beta - 2018.05.27
+----------------------------
+
+- OpenVPN: updated to 2.4.6
+- php: updated to 7.2.6
+- miniupnpd: updated to 2.1
+- dnsmasq: updated to 2.80test2
+- ipset: updated to 6.38
+- nginx: updated to 1.14.0
+- nano: updated to 2.9.7
+- transmission: updated to 2.94
+- snmpd: updated to 5.8.rc2
+- e2fsprogs: updated to 1.44.2
+- tor: updated to 0.3.3.6
+- EBTABLES: updated to master-head as at May 25, 2018
+- BRIDGE-UTILS: updated to 1.6 (plus commits in master as at May 7, 2018)
+- ntpclient: updated to 2017_246
+- Switch from ntpc to ntpclient - Added code to handle previous issues (not update on reboot, etc)
+- Transition from using ntpclient (or ntpc) to Busybox ntpd
+- Clean ups in ntp start proc
+- igmpproxy: update to 0.2.1
+- allow IGMPv3 for LAN
+- IGMP proxy: add the possiblity for a custom config (instead of the tomato default)
+- change label/description "Efficient Multicast Forwarding" at advanced-routing.asp to "Efficient Multicast Forwarding (IGMP Snooping)"
+- add function init() to advanced-firewall.asp (use class attribute for IGMP proxy links to open a new tab/window)
+- fix typo at IGMP proxy notes section (wrong example value for downstream threshold) --> default to 1
+- update for emf-files and igs-files up to Asus 378_4585
+- pptpd: clean sources, add patch instead: change number of default connections to 6, fix for wrong location of binaries
+- rp-pppoe: clean sources 3.12, add (forgotten) patch instead
+- busybox: enable TEE command
+- Revert "QOS: fix the # number of Rule doesn't show in QOS Details view."
+- router/Makefile: Added symlink to iptables-save command
+- router/Makefile: add "--ipv6" to miniupnpd-config AND fix compilation for ARM bring back IPv6 support
+- Revert "router/rc/init.c: R8000: invert the default order of ports"
+- router/shared/defaults.c: add missing "ipv6_dhcpd" at router/shared/defaults.c and set it to "1" (Enable DHCPv6)
+- router/shared/defaults.c: disable "nf_sip" by default (GUI @ Tracking / NAT Helpers SIP - Option Off)
+- www: Modified Bandwidth Limiter warnings
+- www.tomato.js: fix typo
+- www: about.asp: Cosmetics
+- BWL: Manipulate waniface only if QoS is Disabled
+- fpkg: remove unused variable
+- rc/init.c: improve invalid_mac check
+- rc/services.c: remove forgotten reference to stop_zebra()
+- root dhcp6c: do not open a routing socket that's never used
+- dhcpv6: RENEW: ignore advertise messages with none of requested data and missed status codes
+- dhcpv6: small code cleanup
+- dhcpv6: ignore advertise messages with none of requested data and missed status codes
+- dhcpv6: close file descriptors on exec
+- dhcpv6: no need for sizeoff(char)
+- dhcpv6: Fix a number of resource/memory leaks
+- Fixing use of memset
+- Fix dhcp6 parallel build failure with poudriere on FreeBSD, by implementing patch from bug 38: https://sourceforge.net/p/wide-dhcpv6/bugs/38/
+- Resolve bind(control sock): Address already in use error Patch #1 from: https://sourceforge.net/p/wide-dhcpv6/bugs/36/
+- Resolve bind(control sock): Address already in use issue Patch #2 from https://sourceforge.net/p/wide-dhcpv6/bugs/36/
+- IGMP - Resolve CVE-2012-0207 - Resolve potential for divide by 0, allowing remote attackers to cause a denial of service via IGMP packets
+- Fix potential FILE * resource leak
+- Fix bad memset in auth.c
+- Allow for NULL termination on variable partname by increasing its size from 16 to 17
+- Rework save_variables procedure so that sprintf is not writing to the same variable, in which case the results are considered undefined
+- Fix potential FILE * leak in nvram_commit
+- minidlna: patch: add missing if() statement MIA/fix in patch
+- IPROUTE - Fix a few resource leaks
+- fix some build warnings
+- Cleanup tree
+- Added Dlink DIR868L and Xiaomi R1D to compilation
+
+
+2018.2 - 2018.04.17
+----------------------------
+
+- fix problem with passing Tagged/UNtagged on same port when using default vlan
+
+
+2018.1 - 2018.04.14
+----------------------------
+
+- php: updated to 7.2.4
+- php: 'mysql' option is no longer supported in PHP7, changed to 'mysqli'
+- OpenVPN: updated to 2.4.5
+- openssl: updated to 1.0.2o
+- miniupnpd: updated to 2.0.20180412
+- miniupnpd: changed the coding to use an interface name instead of an IP/netmask
+- nginx: updated to 1.13.12
+- Adminer: updated to 4.6.2
+- dnsmasq: update to 2.80test1
+http://thekelleys.org.uk/gitweb/?p=dnsmasq.git;a=log
+- dnscrypt: change update-resolvers script to process v2 resolvers format
+- libncurses: updated to 6.1
+- nettle: updated to 3.4
+- sqlite: updated to 3.23.1
+- MiniDLNA: updated to 1.2.1
+- New wireless driver for SDK7 (Fixed KRACK vulnerability)
+- e2fsprogs: updated to 1.44.1
+- nano: updated to 2.9.5
+- fixed FTP data connection fails from WAN side when port is not 21
+- transmission: updated to 2.93
+- ipset: updated to 6.36
+- libcurl: updated to 7.59.0
+- libcurl: updated CA certificate bundle as of 2018-03-07
+- libusb: update to 1.0.22
+- usb_modeswitch: updated to 2.52
+- libvorbis: updated to 1.3.6
+- tor: updated to 0.3.2.10
+- dropbear: updated to 2018.76
+- xl2tpd: updated to 1.3.11
+- pcre: Updated to 8.42
+- busybox: changed uname
+- router/rc/wan.c: removed "bump wan state file on connect (don't wait watchdog result)"
+- router/rc/wan.c: dnsmasq process was receiving a second SIGINT signal. Instead of triggering another DNSSEC time checking, it was killing process
+- router/rc/init.c: R7000/R8000: enable Air Time Fairness by default
+- router/rc/services.c: fixes issues with httpd
+- router/rc/services.c: SIGINT seems to be issued too soon against dnsmasq - wait one second before doing so
+- rc/services.c: Connect On Demand could no longer work as designed, due to address 1.1.1.1 becoming a legit recursive DNS server, so a different IP address was chosen for this purpose
+- router/Makefile: enabled mini-gmp, saves 4KB
+- router/Makefile: disable RAID (mdadm binary)
+- Several kernel patches in SDK6 & SDK7
+- Changed Tomato versioning
+- kernel: updated drivers/net/ modules:
+https://bitbucket.org/kille72/tomato-arm-kille72/commits/72befb92d9bf2671de800c2841a583e2c58e9374
+https://bitbucket.org/kille72/tomato-arm-kille72/commits/fb421ca0b97e0dedd4e0a2360fd98a1761e80209
+- LED: Preliminary support for 2nd 5Ghz LED on R8000
+- multiwan: forgotten kernel updates for sdk7
+- busybox: add CONFIG_FEATURE_NETSTAT_PRG to configuration, for netstat -p functionality
+- GUI: Air Time Fairness support for R7000/R8000
+- RT-AC3200: invert the default order of ports
+- R8000: invert the default order of ports
+- entware: updated installation script
+- watchdog: increase curl timeout from 3 to 5 seconds in ckcurl function - on heavy loaded 3G connection it could make false positives
+- GUI: fix channel scan function for WiFi
+- GUI: fix problem with passing Tagged/UNtagged on same port when using default vlan
+- GUI: basic-network.asp: LCP Echo (Interval|Link fail limit) is used also with PPTP, L2TP and PPP3G so let's make it possible to modify
+- GUI: add possibility to change default IP (198.51.100.1) where DNS queries send to trigger connect-on-demand
+https://bitbucket.org/kille72/tomato-arm-kille72/commits/6d47b63eae4e35f5cbf2375914a2113af61e8d6e
+- cstats: fix excess I/O, reduce console spam
+https://bitbucket.org/kille72/tomato-arm-kille72/commits/709e23e7f1d6cbb07f125a4227cbe995f2118f88
+- libid3tag: fix build/link error on Ubuntu + some additional fixes
+- Fixed TOR build on some systems
+- Cleanup of unused components from the tree and Makefiles
+- www: default theme - original 'usbblue'
+- Rebranding to FreshTomato :)
