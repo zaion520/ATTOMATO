@@ -1,4 +1,8 @@
-# **FreshTomato-ARM** #
+# **advancedtomato-ARM** #
+# **advancedtomato-ARM** #
+# **advancedtomato-ARM** #
+# **advancedtomato-ARM** #
+
 
 **Forked off from Tomato-ARM by Shibby, builds compiled by @kille72**
 
@@ -56,10 +60,18 @@ Disclaimer: I am not responsible for any bricked routers, nor do I encourage oth
     sudo apt-get remove libicu-dev  
 
 9. Install i386 elf1 packages:  
-    sudo dpkg --add-architecture i386  
-    sudo apt-get update  
-    sudo apt-get install libelf1:i386 libelf-dev:i386  
-
+   	 sudo dpkg --add-architecture i386  
+   	 sudo apt-get update  
+   	 sudo apt-get install libelf1:i386 libelf-dev:i386  
+	 wget https://advancedtomato.com/data/tools/automake_1.13.2-1ubuntu1_all.deb
+	 wget https://advancedtomato.com/data/tools/automake_1.14.1-2ubuntu1_all.deb
+	 sudo dpkg -i automake_1.13.2-1ubuntu1_all.deb
+	 sudo dpkg -i automake_1.14.1-2ubuntu1_all.deb
+	 sudo apt-get remove bison libbison-dev
+	 wget https://advancedtomato.com/data/tools/libbison-dev_2.7.1.dfsg-1_amd64.deb
+	 wget https://advancedtomato.com/data/tools/bison_2.7.1.dfsg-1_amd64.deb
+	 sudo dpkg -i libbison-dev_2.7.1.dfsg-1_amd64.deb
+	 sudo dpkg -i bison_2.7.1.dfsg-1_amd64.deb
 10. Clone/download repository:  
     git clone https://bitbucket.org/kille72/freshtomato-arm.git <chosen-subdir>  
 
