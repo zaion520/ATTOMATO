@@ -65,8 +65,11 @@ Disclaimer: I am not responsible for any bricked routers, nor do I encourage oth
 	 sudo dpkg -i automake_1.13.2-1ubuntu1_all.deb
 	 sudo dpkg -i automake_1.14.1-2ubuntu1_all.deb
 	 sudo apt-get remove bison libbison-dev
+	 
 	 wget https://advancedtomato.com/data/tools/libbison-dev_2.7.1.dfsg-1_amd64.deb
+	 
 	 wget https://advancedtomato.com/data/tools/bison_2.7.1.dfsg-1_amd64.deb
+	 
 	 sudo dpkg -i libbison-dev_2.7.1.dfsg-1_amd64.deb
 	 sudo dpkg -i bison_2.7.1.dfsg-1_amd64.deb
 10. Clone/download repository:  
