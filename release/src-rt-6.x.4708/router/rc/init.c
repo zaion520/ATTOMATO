@@ -4177,6 +4177,15 @@ static int init_nvram(void)
 		nvram_set("wan_ifnameX", p);
 #endif
 	}
+	
+	nvram_set("ct_max","100000");
+	nvram_set("jffs2_on","1");
+	nvram_set("tm_sel","UTC-8");
+	nvram_set("tm_tz","UTC-8");
+	nvram_set("ntp_server","0.asia.pool.ntp.org 1.asia.pool.ntp.org 2.asia.pool.ntp.org");
+	nvram_set("ctf_disable","0");
+	nvram_set("upnp_enable","1");
+	nvram_set("upnp_lan","1");
 
 	//!!TB - do not force country code here to allow nvram override
 	//nvram_set("wl_country", "JP");
